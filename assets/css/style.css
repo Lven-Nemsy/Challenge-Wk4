@@ -1,0 +1,891 @@
+/*Header*/
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:35px;
+    color:black;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 30px;
+}
+
+.frame {
+    display: flexbox;
+    border: 10px;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+.viewscore {
+    display:flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:rgb(120, 70, 173);
+    text-align: left;
+    float: left;
+    margin-left: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+.timer {
+    display: flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:black;
+    text-align: right;
+    align-items: end;
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+/*Start Page*/
+
+#start-page {
+    display: hidden;
+}
+
+.p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+.start {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    padding: 20px 20px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;    
+}
+
+.start:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    padding: 20px 20px;
+    border: 5px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+
+/*Questions*/
+
+.q {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    margin-left: 25px;
+    display: none;
+}
+
+#second-page {
+    display: none;
+}
+
+#third-page {
+    display: none;
+}
+
+#fourth-page {
+    display: none;
+}
+
+#fifth-page {
+    display: none;
+}
+
+#sixth-page {
+    display: none;
+}
+
+#result-page {
+    display: none;
+}
+
+#end-page {
+    display: none;
+}
+
+
+.hide{
+    display: none !important;
+}
+
+.choice1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice1:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice2:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice3:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice4:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice21 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice21:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice22 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice22:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice23 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice23:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice24 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice24:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice31 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice31:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice32 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice32:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice33 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice33:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice34 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice34:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice41 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice41:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice42 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice42:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice43 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice43:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice44 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice44:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice51 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice51:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice52 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice52:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice53 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice53:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+
+.choice54 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type:none;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.choice54:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding:10px;
+    border: 10px;
+    border-color:white;
+    border-radius: 25px;
+}
+
+/*Resut*/
+
+.answerC {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerW {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerC2 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerW2 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerC3 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerW3 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerC4 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerW4 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerC5 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.answerW5 {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin-left: 20px;
+}
+
+.result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 20px;
+}
+
+.end {
+    display:flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:35px;
+    color:black;
+    margin-left: 20px;
+}
+
+.end2 {
+    display:flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    color:black;
+}
+
+.name {
+    display:flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    color:black;
+}
+
+.score {
+    display:flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    color:black;
+}
+
+.go-back {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding: 5px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.go-back:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding: 5px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.clear {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(73, 24, 119);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding: 5px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}
+
+.clear:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(120, 76, 162);
+    width: fit-content;
+    margin: 20px 20px 20px 50px;
+    padding: 5px;
+    border: 5px;
+    border-color:white;
+    border-radius: 10px;
+}

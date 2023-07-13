@@ -3,85 +3,103 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Coding Quiz Challenge</title>
 </head>
 
 <body>
-    <header>
-    <h2 class="topl">View high scores</h2>
+    <header  class = "header">
+    <button class="viewscore">View high scores</button>
     <h3 class="
         timer">Time: 60</h3>
     <h1 class="header">Coding Quiz Challenge</h1>
     </header>
-    
-    <section id="start-page" class = "header">
+
+    <section id="start-page">
         <p class="p">Try to answer the following code-related questions within the time limit. Keep in mind that
             incorrect answers will penalize your score/time by ten seconds!</p>
 
-        <div class="start" style="text-align: center;">Start Quiz</div>
+        <div style="display:flex; justify-content: center;"><button class="start">Start Quiz</button></div>
     </section>
 
-    <div id = "second-page" class="q">Commonly used data types DO NOT include:
-        <ul>
-            <li class="choice">1. Strings</li>
-            <li class="choice">2. Booleans</li>
-            <li class="choice">3. Alerts</li>
-            <li class="choice">4. Numbers</li>
-        </ul>
-    </div>
+    <section id = "first-page" class="q">Commonly used data types DO NOT include:
+        <ol>
+            <button class="choice1">1. Strings</button>
+            <button class="choice2">2. Booleans</button>
+            <button class="choice3">3. Alerts</button>
+            <button class="choice4">4. Numbers</button>
+        </ol>
+        <!--A:2-->
+        <div class="answerC">Correct!</div>
+        <div class="answerW">Wrong! Try again</div>
+    </section>
 
-    <div id = "third-page" class="q">The condition in an if/else statement is enclosed with ________.
-        <ul>
-            <li class="choice">1. Quotes</li>
-            <li class="choice">2. Curly brackets</li>
-            <li class="choice">3. Parenthesis</li>
-            <li class="choice">4. Square brackets</li>
-        </ul>
-    </div>
+    <section id = "second-page" class="q">The condition in an if/else statement is enclosed with ________.
+        <ol>
+            <button class="choice21">1. Quotes</button>
+            <button class="choice22">2. Curly brackets</button>
+            <button class="choice23">3. Parenthesis</button>
+            <button class="choice24">4. Square brackets</button>
+        </ol>
+        <!--A:3-->
+        <div class="answerC2">Correct!</div>
+        <div class="answerW2">Wrong! Try again</div>
+    </section>
 
-    <div id = "fourth-page" class="q">Arrays in JavaScript can be used to store ________.
-        <ul>
-            <li class="choice">1. Numbers and strings</li>
-            <li class="choice">2. Other arrays</li>
-            <li class="choice">3. Booleans</li>
-            <li class="choice">4. All of the above</li>
-        </ul>
-    </div>
+    <section id = "third-page" class="q">Arrays in JavaScript can be used to store ________.
+        <ol>
+            <button class="choice31">1. Numbers and strings</button>
+            <button class="choice32">2. Other arrays</button>
+            <button class="choice33">3. Booleans</button>
+            <button class="choice34">4. All of the above</button>
+        </ol>
+        <!--A:4-->
+        <div class="answerC3">Correct!</div> 
+        <div class="answerW3">Wrong! Try again</div>
+    </section>
 
-    <div id = "fifth-page" class="q">String values must be enclosed within ________ when being assigned to variables.
-        <ul>
-            <li class="choice">1. Commas</li>
-            <li class="choice">2. Curly brackets</li>
-            <li class="choice">3. Quotes</li>
-            <li class="choice">4. Parenthesis</li>
-        </ul>
-    </div>
+    <section id = "fourth-page" class="q">String values must be enclosed within ________ when being assigned to variables.
+        <ol>
+            <button class="choice41">1. Commas</button>
+            <button class="choice42">2. Curly brackets</button>
+            <button class="choice43">3. Quotes</button>
+            <button class="choice44">4. Parenthesis</button>
+        </ol>
+        <!--A:2-->
+        <div class="answerC4">Correct!</div>
+        <div class="answerW4">Wrong! Try again</div>
+    </section>
 
-    <div id = "sixth-page" class="q">A very useful tool used during development and debugging for printing content to the debugger is:
-        <ul>
-            <li class="choice">1. JavaScript</li>
-            <li class="choice">2. Terminal/bash</li>
-            <li class="choice">3. For loops</li>
-            <li class="choice">4. console.log</li>
-        </ul>
-    </div>
+    <section id = "fifth-page" class="q">A very useful tool used during development and debugging for printing content to the debugger is:
+        <ol>
+            <button class="choice51">1. JavaScript</button>
+            <button class="choice52">2. Terminal/bash</button>
+            <button class="choice53">3. For loops</button>
+            <button class="choice54">4. console.log</button>
+        </ol>
+        <!--A:3-->
+        <div class="answerC5">Correct!</div>
+        <div class="answerW5">Wrong! Try again</div>
+    </section>
 
     <section id = "result-page">
-        <div class="result">Your final score is </div>
-        <div class="result">Enter initials: </div>
+        <section class="result">Your final score is <span id = "countdown"></span>. </section>
+        <section class="result">Enter initials:<span><textarea id="text" placeholder="Abbreviation"></textarea></span></section>
+        <div style="display:flex; justify-content: center;"><button id="submit" class="start" style="text-align: center;">Submit</button></div>
     </section>  
 
     <footer id = "end-page">
         <h1 class="end">All done!</h1>
         <h1 class="end2">High Scores</h1>
+        <section class="name"> Name: 
+        </section>
+        <section class="score">Score: <span id = "scoring"></span> </section>
+        <button class="go-back">Go back</button>
+        <button class="clear">Clear high scores</button>
     </footer>
 
-    <section id = "restart-page"> 
-      <div class="go-back">Go back</div>
-      <div class="clear">Clear high scores</div>
-    </section>
-    <script src = "./assets/script.js"></script>
+    <script src = "./assets/js/script.js"></script>
 </body>
 
 </html>
