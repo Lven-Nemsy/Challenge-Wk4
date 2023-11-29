@@ -85,7 +85,11 @@
 
     <section id = "result-page">
         <section class="result">Your final score is <span id = "countdown"></span>. </section>
-        <section class="result">Enter initials:<span><textarea id="text" placeholder="Abbreviation"></textarea></span></section>
+        <section class="result">
+            <label for="text">Enter initials:</label>
+            <input type="text" id="text" name="initials"/>
+            <button id="save">Save</button>
+        </section>
         <div style="display:flex; justify-content: center;"><button id="submit" class="start" style="text-align: center;">Submit</button></div>
     </section>  
 

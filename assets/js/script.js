@@ -27,7 +27,7 @@ var chce54 = document.querySelector(".choice54");
 var frstpage = document.querySelector("#first-page");
 var scndpage = document.querySelector("#second-page");
 var thrdpage = document.querySelector("#third-page");
-var frthpage= document.querySelector("#fourth-page");
+var frthpage = document.querySelector("#fourth-page");
 var ffthpage = document.querySelector("#fifth-page");
 var rsltpage = document.querySelector("#result-page");
 var answerc = document.querySelector(".answerC");
@@ -71,202 +71,194 @@ var penalty = -10;
 var topl = 0;
 var winner = "";
 
-function hideElement(el){
-    el.classList.add("hide");
+function hideElement(el) {
+	el.classList.add("hide");
 }
 
-function showElement(el){
-    el.classList.remove("hide");
+function showElement(el) {
+	el.classList.remove("hide");
 }
 
-function start(event){
-    hideElement(strtpage);
-    frstpage.style.display = "block";
-    timerT = setInterval(function(){
-        time--;
-        timeEl.textContent = time;
-        if(time === 0){
-            clearInterval(timerT);
-            hideElement(frstpage);
-            hideElement(scndpage);
-            hideElement(thrdpage);
-            hideElement(frthpage);
-            hideElement(ffthpage);
-            rsltpage.style.display = "block";
-        }
-    }, 1000);
-//global variable of timerT
-//when quiz is finished - call clearInterval(timerT)- last answer will trigger
+function start(event) {
+	hideElement(strtpage);
+	frstpage.style.display = "block";
+	timerT = setInterval(function () {
+		time--;
+		timeEl.textContent = time;
+		if (time === 0) {
+			clearInterval(timerT);
+			hideElement(frstpage);
+			hideElement(scndpage);
+			hideElement(thrdpage);
+			hideElement(frthpage);
+			hideElement(ffthpage);
+			rsltpage.style.display = "block";
+		}
+	}, 1000);
+	//global variable of timerT
+	//when quiz is finished - call clearInterval(timerT)- last answer will trigger
 }
 
 startbtn.addEventListener("click", start);
 
 // First Question
 
-function ques1C(event){
-    hideElement(frstpage);
-    scndpage.style.display = "block";
-    answerc.style.display = "block";
-    answerw.style.display = "hidden";
+function ques1C(event) {
+	hideElement(frstpage);
+	scndpage.style.display = "block";
+	answerc.style.display = "block";
+	answerw.style.display = "hidden";
 }
 
-chce2.addEventListener("click", ques1C)
+chce2.addEventListener("click", ques1C);
 
-function ques1W(event){
-    answerw.style.display = "block";
-    answerc.style.display = "hidden";
-    time = time + penalty
+function ques1W(event) {
+	answerw.style.display = "block";
+	answerc.style.display = "hidden";
+	time = time + penalty;
 }
-chce1.addEventListener("click", ques1W)
-chce3.addEventListener("click", ques1W)
-chce4.addEventListener("click", ques1W)
-
-
+chce1.addEventListener("click", ques1W);
+chce3.addEventListener("click", ques1W);
+chce4.addEventListener("click", ques1W);
 
 // Second Question
 
-function ques2C(event){
-    hideElement(scndpage);
-    thrdpage.style.display = "block";
-    answerc2.style.display = "block";
-    answerw2.style.display = "hidden";
+function ques2C(event) {
+	hideElement(scndpage);
+	thrdpage.style.display = "block";
+	answerc2.style.display = "block";
+	answerw2.style.display = "hidden";
 }
-chce23.addEventListener("click", ques2C)
+chce23.addEventListener("click", ques2C);
 
-function ques2W(event){
-    answerw2.style.display = "block";
-    answerc2.style.display = "hidden";
-    time = time + penalty
+function ques2W(event) {
+	answerw2.style.display = "block";
+	answerc2.style.display = "hidden";
+	time = time + penalty;
 }
-chce21.addEventListener("click", ques2W)
-chce22.addEventListener("click", ques2W)
-chce24.addEventListener("click", ques2W)
-
-
+chce21.addEventListener("click", ques2W);
+chce22.addEventListener("click", ques2W);
+chce24.addEventListener("click", ques2W);
 
 // Third Question
 
-function ques3C(event){
-    hideElement(thrdpage);
-    frthpage.style.display = "block";
-    answerc3.style.display = "block";
-    answerw3.style.display = "hidden";
+function ques3C(event) {
+	hideElement(thrdpage);
+	frthpage.style.display = "block";
+	answerc3.style.display = "block";
+	answerw3.style.display = "hidden";
 }
-chce34.addEventListener("click", ques3C)
+chce34.addEventListener("click", ques3C);
 
-function ques3W(event){
-    answerw3.style.display = "block";
-    answerc3.style.display = "hidden";
-    time = time + penalty
+function ques3W(event) {
+	answerw3.style.display = "block";
+	answerc3.style.display = "hidden";
+	time = time + penalty;
 }
-chce31.addEventListener("click", ques3W)
-chce32.addEventListener("click", ques3W)
-chce33.addEventListener("click", ques3W)
-
-
+chce31.addEventListener("click", ques3W);
+chce32.addEventListener("click", ques3W);
+chce33.addEventListener("click", ques3W);
 
 // Fourth Question
 
-function ques4C(event){
-    hideElement(frthpage);
-    ffthpage.style.display = "block";
-    answerc4.style.display = "block";
-    answerw4.style.display = "hidden";
+function ques4C(event) {
+	hideElement(frthpage);
+	ffthpage.style.display = "block";
+	answerc4.style.display = "block";
+	answerw4.style.display = "hidden";
 }
-chce42.addEventListener("click", ques4C)
+chce42.addEventListener("click", ques4C);
 
-function ques4W(event){
-    answerw4.style.display = "block";
-    answerc4.style.display = "hidden";
-    time = time + penalty
+function ques4W(event) {
+	answerw4.style.display = "block";
+	answerc4.style.display = "hidden";
+	time = time + penalty;
 }
-chce41.addEventListener("click", ques4W)
-chce43.addEventListener("click", ques4W)
-chce44.addEventListener("click", ques4W)
-
-
+chce41.addEventListener("click", ques4W);
+chce43.addEventListener("click", ques4W);
+chce44.addEventListener("click", ques4W);
 
 // Fifth Question
 
-
-
-function ques5C(event){
-    hideElement(ffthpage);
-    cntdwn.textContent = time;
-        console.log(cntdwn);
-    rsltpage.style.display = "block";
-    answerc5.style.display = "block";
-    answerw5.style.display = "hidden";
-    clearInterval(timerT);
-    localStorage.setItem(score, JSON.stringify({time}))
+function ques5C(event) {
+	hideElement(ffthpage);
+	cntdwn.textContent = time;
+	console.log(cntdwn);
+	rsltpage.style.display = "block";
+	answerc5.style.display = "block";
+	answerw5.style.display = "hidden";
+	clearInterval(timerT);
+	
 }
-chce53.addEventListener("click", ques5C)
+chce53.addEventListener("click", ques5C);
 
-function ques5W(event){
-    answerw5.style.display = "block";
-    answerc5.style.display = "hidden";
-    time = time + penalty
+function ques5W(event) {
+	answerw5.style.display = "block";
+	answerc5.style.display = "hidden";
+	time = time + penalty;
 }
-chce51.addEventListener("click", ques5W)
-chce52.addEventListener("click", ques5W)
-chce54.addEventListener("click", ques5W)
-
-
+chce51.addEventListener("click", ques5W);
+chce52.addEventListener("click", ques5W);
+chce54.addEventListener("click", ques5W);
 
 //Enter Score
+var highscoreArr = JSON.parse(localStorage.getItem('highscores')) || []
 
+function highscore(event) {
+	console.log(endpage);
+	var userInput = text.value
 
+	var highscoreObj = {
+		userInput: userInput,
+		score: time,
+	};
 
-function highscore(event){
-    console.log(endpage);
-    endpage.style.display = "block";
-    hideElement(strtpage);
-    clearInterval(timerT);
-    text.addEventListener("keydown", function (event) {
-        var key = event.key;
-        var alphabetCharacters = 'abcdefghijklmnopqrstuvwxyz'.split(
-          ''
-        );
-        if (alphabetCharacters.includes(key)) {
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].textContent += event.key;
-          }
-        }
-    });
-    var winner = localStorage.setItem(JSON.parse(text));
-    var score = localStorage.getItem(cntdwn);
+	highscoreArr.push(highscoreObj)
+
+	
+	localStorage.setItem("highscores", JSON.stringify(highscoreArr));
+
+	endpage.style.display = "block";
+	hideElement(strtpage);
+	clearInterval(timerT);
+
+	// grab initals and score
+	
+	
+	
 }
-vwscore.addEventListener("click", highscore);
+document.getElementById('save').addEventListener('click', highscore)
 
 
 //text.addEventListener("keydown")
 
-function submit(event){
-    hideElement(rsltpage);
-    endpage.style.display = "block";
-    timerT = setInterval(function(){
-        timeEl.textContent = time;
-        time = 0}
-)}
-sbmit.addEventListener("click", submit)
+function submit(event) {
+	hideElement(rsltpage);
+	endpage.style.display = "block";
+	timerT = setInterval(function () {
+		timeEl.textContent = time;
+		time = 0;
+	});
+}
+sbmit.addEventListener("click", submit);
 
 // High Score Page
 
-function goback(event){
-    hideElement(endpage);
-    showElement(strtpage);
-    for (var i = 0; i < 5; i++) {
-        start();
-}}
-back.addEventListener("click", goback)
-
-function erase(event){
-    names = clearInterval
-    score = clearInterval
+function goback(event) {
+	hideElement(endpage);
+	showElement(strtpage);
+	for (var i = 0; i < 5; i++) {
+		start();
+	}
 }
-clear.addEventListener("click", erase)
+back.addEventListener("click", goback);
 
+function erase(event) {
+	names = clearInterval;
+	score = clearInterval;
+}
+clear.addEventListener("click", erase);
 
 //Score tracker
 //function updateScore(){
- //   score.textContent = scorekey
+//   score.textContent = scorekey
